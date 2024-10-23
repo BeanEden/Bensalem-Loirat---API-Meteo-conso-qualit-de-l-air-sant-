@@ -1,0 +1,1502 @@
+[
+    {
+        "country": "FR",
+        "city": "NOTRE-DAME-DE-BLIQUETUIT",
+        "location": "Maison Parc Brotonne",
+        "coordinates": {
+            "lon": 0.7588330003850884,
+            "lat": 49.498295000227166
+        },
+        "measurements_parameter": "SO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 1.8,
+        "measurements_lastupdated": "2024-10-19T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "LOGNES",
+        "location": "LOGNES",
+        "coordinates": {
+            "lon": 2.6352780003708567,
+            "lat": 48.840280000208296
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 5.4,
+        "measurements_lastupdated": "2024-10-22T01:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATTON",
+        "location": "Atton",
+        "coordinates": {
+            "lon": 6.0936109998895915,
+            "lat": 48.88638699976619
+        },
+        "measurements_parameter": "SO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 2.3,
+        "measurements_lastupdated": "2019-06-11T12:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "MATOURY",
+        "location": "Kalou",
+        "coordinates": {
+            "lon": -52.32380000027769,
+            "lat": 4.84815999961769
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 5.5,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "NIORT",
+        "location": "Niort - Tassigny",
+        "coordinates": {
+            "lon": -0.47187800021066983,
+            "lat": 46.333880000156256
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 4.5,
+        "measurements_lastupdated": "2024-10-22T01:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "MARSEILLE 8E ARRONDISSEMENT",
+        "location": "MARSEILLE RABATAU",
+        "coordinates": {
+            "lon": 5.397359999748624,
+            "lat": 43.27644999994541
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 12.8,
+        "measurements_lastupdated": "2024-10-22T01:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "LE MANS",
+        "location": "SOURCES",
+        "coordinates": {
+            "lon": 0.22142200008598475,
+            "lat": 47.97106600004665
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 22.8,
+        "measurements_lastupdated": "2024-03-11T08:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "TRIGNAC",
+        "location": "JULES VERNE",
+        "coordinates": {
+            "lon": -2.190763999746359,
+            "lat": 47.31572700030015
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 14.4,
+        "measurements_lastupdated": "2024-10-23T02:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "FROSSAY",
+        "location": "FROSSAY",
+        "coordinates": {
+            "lon": -1.9366189996354752,
+            "lat": 47.24746999974683
+        },
+        "measurements_parameter": "SO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 0.3,
+        "measurements_lastupdated": "2024-10-22T01:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ROUSSILLON",
+        "location": "ROUSSILLON",
+        "coordinates": {
+            "lon": 4.805146999759017,
+            "lat": 45.36782000014534
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 0.1,
+        "measurements_lastupdated": "2024-05-31T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATMO NOUVELLE-AQUITAINE",
+        "location": "NET-FR058A",
+        "coordinates": {
+            "lon": 1.76,
+            "lat": 45.25999999999999
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 3.0,
+        "measurements_lastupdated": "2024-03-04T06:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATMO NOUVELLE-AQUITAINE",
+        "location": "NET-FR058A",
+        "coordinates": {
+            "lon": -0.391111,
+            "lat": 43.310832999999995
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 4.8,
+        "measurements_lastupdated": "2024-03-04T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATMO NOUVELLE-AQUITAINE",
+        "location": "NET-FR058A",
+        "coordinates": {
+            "lon": -1.5277780000000003,
+            "lat": 43.49416699999998
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 19.7,
+        "measurements_lastupdated": "2024-03-04T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATMO OCCITANIE",
+        "location": "NET-FR068A",
+        "coordinates": {
+            "lon": 1.46765,
+            "lat": 43.64305499999999
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 83.5,
+        "measurements_lastupdated": "2024-03-04T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATMO GRAND EST",
+        "location": "NET-FR075A",
+        "coordinates": {
+            "lon": 6.15426,
+            "lat": 48.68870999999999
+        },
+        "measurements_parameter": "PM2.5",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 7.5,
+        "measurements_lastupdated": "2024-03-04T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATMO OCCITANIE",
+        "location": "NET-FR068A",
+        "coordinates": {
+            "lon": 2.23,
+            "lat": 43.61055799999999
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 1.3,
+        "measurements_lastupdated": "2024-03-04T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATMO NOUVELLE-AQUITAINE",
+        "location": "NET-FR058A",
+        "coordinates": {
+            "lon": -0.536944,
+            "lat": 43.37611
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 2.7,
+        "measurements_lastupdated": "2024-03-04T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATMO HAUTS DE FRANCE",
+        "location": "NET-FR074A",
+        "coordinates": {
+            "lon": 2.3046,
+            "lat": 49.9025
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 32.2,
+        "measurements_lastupdated": "2024-03-04T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATMO OCCITANIE",
+        "location": "NET-FR068A",
+        "coordinates": {
+            "lon": 1.3759999999999997,
+            "lat": 43.634003
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 1.4,
+        "measurements_lastupdated": "2024-01-29T17:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "Morbihan",
+        "location": "FR19032",
+        "coordinates": {
+            "lon": -3.3948053239104,
+            "lat": 47.742485358103
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 2.8,
+        "measurements_lastupdated": "2024-01-29T17:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "Bouches-du-Rh\u00f4ne",
+        "location": "FR02012",
+        "coordinates": {
+            "lon": 4.98277521795416,
+            "lat": 43.5094524142014
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 66.5,
+        "measurements_lastupdated": "2024-01-29T17:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "Paris",
+        "location": "FR04012",
+        "coordinates": {
+            "lon": 2.32749896854232,
+            "lat": 48.8277822163547
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 29.3,
+        "measurements_lastupdated": "2024-01-09T08:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "Landes",
+        "location": "FR31036",
+        "coordinates": {
+            "lon": -1.03861416519331,
+            "lat": 43.7047196490079
+        },
+        "measurements_parameter": "PM2.5",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 11.5,
+        "measurements_lastupdated": "2023-10-12T08:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR04135",
+        "coordinates": {
+            "lon": 2.40805988322215,
+            "lat": 48.8379529715682
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 4.9,
+        "measurements_lastupdated": "2023-04-13T19:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR19052",
+        "coordinates": {
+            "lon": -4.09972231051183,
+            "lat": 47.9961238147632
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 24.6,
+        "measurements_lastupdated": "2022-12-31T23:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR32007",
+        "coordinates": {
+            "lon": 4.41750134226911,
+            "lat": 46.8022145735861
+        },
+        "measurements_parameter": "PM2.5",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 6.6,
+        "measurements_lastupdated": "2022-01-01T00:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR09301",
+        "coordinates": {
+            "lon": -0.135460554953519,
+            "lat": 46.8243469167798
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 33.4,
+        "measurements_lastupdated": "2021-10-07T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR23153",
+        "coordinates": {
+            "lon": -2.1516268022174,
+            "lat": 47.3315476635576
+        },
+        "measurements_parameter": "SO2",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": -2.0,
+        "measurements_lastupdated": "2021-07-14T16:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR34018",
+        "coordinates": {
+            "lon": 2.71951477537923,
+            "lat": 47.9979271894844
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 9.1,
+        "measurements_lastupdated": "2020-12-14T12:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR11030",
+        "coordinates": {
+            "lon": 2.839,
+            "lat": 50.5320309994734
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 13.5,
+        "measurements_lastupdated": "2018-12-17T08:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "Luc\ufffd",
+        "coordinates": {
+            "lon": 1.4687724389939412,
+            "lat": 48.43928587629702
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 6.9,
+        "measurements_lastupdated": "2018-12-07T10:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR39014",
+        "coordinates": {
+            "lon": -61.1501,
+            "lat": 14.6661999997358
+        },
+        "measurements_parameter": "PM2.5",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 7.55,
+        "measurements_lastupdated": "2018-04-25T04:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR06134",
+        "coordinates": {
+            "lon": 3.433458,
+            "lat": 50.438677999473
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 5.35,
+        "measurements_lastupdated": "2018-04-23T11:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR06011",
+        "coordinates": {
+            "lon": 3.4,
+            "lat": 50.3274999994726
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 51.9,
+        "measurements_lastupdated": "2018-04-25T00:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR06007",
+        "coordinates": {
+            "lon": 3.973611,
+            "lat": 50.278335999472496
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 13.3,
+        "measurements_lastupdated": "2018-04-25T00:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR11027",
+        "coordinates": {
+            "lon": 3.159958,
+            "lat": 50.7254499994741
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 10.5,
+        "measurements_lastupdated": "2018-04-25T00:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR11026",
+        "coordinates": {
+            "lon": 3.127047,
+            "lat": 50.7754809994743
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 56.28,
+        "measurements_lastupdated": "2018-04-25T00:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "FR03004",
+        "coordinates": {
+            "lon": 5.387528,
+            "lat": 43.315271999464
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 106.5,
+        "measurements_lastupdated": "2017-12-07T16:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": null,
+        "location": "Escautpont",
+        "coordinates": {
+            "lon": 3.551812869268811,
+            "lat": 50.420270857658636
+        },
+        "measurements_parameter": "SO2",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 3.6,
+        "measurements_lastupdated": "2017-07-18T20:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "\u00c9VREUX",
+        "location": "Evreux Centre",
+        "coordinates": {
+            "lon": 1.1483189995666427,
+            "lat": 49.02133999977332
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 8.5,
+        "measurements_lastupdated": "2024-03-11T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "TOULOUSE",
+        "location": "Toulouse Berthelot",
+        "coordinates": {
+            "lon": 1.4440030003237578,
+            "lat": 43.58734500001323
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 9.2,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "MONTLU\u00c7ON",
+        "location": "Montlu\u00e7on",
+        "coordinates": {
+            "lon": 2.593944999588949,
+            "lat": 46.34071999975818
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 15.1,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "BIARRITZ",
+        "location": "Biarritz-hippodrome",
+        "coordinates": {
+            "lon": -1.553876000216595,
+            "lat": 43.47023799995679
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 1.2,
+        "measurements_lastupdated": "2024-03-11T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "NEUILLY-SAINT-FRONT",
+        "location": "Neuilly-Saint-Front",
+        "coordinates": {
+            "lon": 3.2608189995595422,
+            "lat": 49.174929999836365
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 2.0,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "BASSENS",
+        "location": "BASSENS",
+        "coordinates": {
+            "lon": -0.5158349997004273,
+            "lat": 44.90029500003576
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 12.7,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "VALENCIENNES",
+        "location": "Valenciennes Wallon",
+        "coordinates": {
+            "lon": 3.52272999998034,
+            "lat": 50.3642500001959
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 38.8,
+        "measurements_lastupdated": "2024-03-11T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "DREUX",
+        "location": "Dreux Centre",
+        "coordinates": {
+            "lon": 1.3584720000276689,
+            "lat": 48.72969400021079
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 13.1,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ROANNE",
+        "location": "ROANNE",
+        "coordinates": {
+            "lon": 4.0746560001998136,
+            "lat": 46.041110000297905
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 17.9,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "GRENOBLE",
+        "location": "Grenoble Boulevards",
+        "coordinates": {
+            "lon": 5.720624999826889,
+            "lat": 45.18069000028921
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 43.4,
+        "measurements_lastupdated": "2024-03-11T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "LORIENT",
+        "location": "Lorient Normandie",
+        "coordinates": {
+            "lon": -3.3693800000984546,
+            "lat": 47.75894500013407
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 1.8,
+        "measurements_lastupdated": "2024-03-11T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "TOUQUES",
+        "location": "Touques",
+        "coordinates": {
+            "lon": 0.10925299975172797,
+            "lat": 49.347999999977596
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 7.5,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "BORDEAUX",
+        "location": "Bordeaux_GAUTIER",
+        "coordinates": {
+            "lon": -0.5985249997570591,
+            "lat": 44.83382400000155
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 22.9,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "JONVILLE-EN-WO\u00cbVRE",
+        "location": "Jonville en Woevre",
+        "coordinates": {
+            "lon": 5.785556000215877,
+            "lat": 49.06582999991435
+        },
+        "measurements_parameter": "SO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 0.7,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "JONVILLE-EN-WO\u00cbVRE",
+        "location": "Jonville en Woevre",
+        "coordinates": {
+            "lon": 5.785556000215877,
+            "lat": 49.06582999991435
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 4.1,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "METZ",
+        "location": "Metz-Centre",
+        "coordinates": {
+            "lon": 6.180832999656292,
+            "lat": 49.11944200020038
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 1.2,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "MONTCEAU-LES-MINES",
+        "location": "Montceau-les-Mines 9me \u00e9cluse",
+        "coordinates": {
+            "lon": 4.36689299992175,
+            "lat": 46.67878300005844
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 9.6,
+        "measurements_lastupdated": "2024-03-11T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ROMANS-SUR-IS\u00c8RE",
+        "location": "Romans-sur-Is\u00e8re",
+        "coordinates": {
+            "lon": 5.044299999923555,
+            "lat": 45.04250000001699
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 7.6,
+        "measurements_lastupdated": "2024-01-05T10:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "VIF",
+        "location": "Grenoble PeriurbSud",
+        "coordinates": {
+            "lon": 5.676700000124183,
+            "lat": 45.057799999853565
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 6.6,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "LYON 7E ARRONDISSEMENT",
+        "location": "GERLAND",
+        "coordinates": {
+            "lon": 4.829793999852605,
+            "lat": 45.73529000012643
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 6.3,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "LYON 7E ARRONDISSEMENT",
+        "location": "GERLAND",
+        "coordinates": {
+            "lon": 4.829793999852605,
+            "lat": 45.73529000012643
+        },
+        "measurements_parameter": "PM2.5",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 3.5,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "NIORT",
+        "location": "Niort Venise",
+        "coordinates": {
+            "lon": -0.4828609996053624,
+            "lat": 46.320026000248056
+        },
+        "measurements_parameter": "PM2.5",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 6.4,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "MONTARGIS",
+        "location": "Montargis_trafic",
+        "coordinates": {
+            "lon": 2.7401109996671957,
+            "lat": 48.00693499977585
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 22.8,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "NANCY",
+        "location": "Hotel Districal",
+        "coordinates": {
+            "lon": 6.17511099989272,
+            "lat": 48.685856000287316
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 20.9,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "CHALON-SUR-SA\u00d4NE",
+        "location": "Chalon Centre Ville",
+        "coordinates": {
+            "lon": 4.847322000439883,
+            "lat": 46.78230999976729
+        },
+        "measurements_parameter": "PM2.5",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 7.5,
+        "measurements_lastupdated": "2024-10-22T01:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "PORT-J\u00c9R\u00d4ME-SUR-SEINE",
+        "location": "NDGravenchon Pasteur",
+        "coordinates": {
+            "lon": 0.5718530002820182,
+            "lat": 49.49333199980267
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 47.4,
+        "measurements_lastupdated": "2018-08-23T12:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "SAINTE-SUZANNE",
+        "location": "Ecole La Marine",
+        "coordinates": {
+            "lon": 55.61897700015456,
+            "lat": -20.91058500035716
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": -0.4,
+        "measurements_lastupdated": "2024-03-11T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "LE TAMPON",
+        "location": "Station Bourg-Murat",
+        "coordinates": {
+            "lon": 55.58262000039505,
+            "lat": -21.204814999614452
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 2.8,
+        "measurements_lastupdated": "2024-10-22T01:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "FORBACH",
+        "location": "Station de FORBACH",
+        "coordinates": {
+            "lon": 6.91086700017932,
+            "lat": 49.18741999988842
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 8.8,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "SAINT-QUENTIN",
+        "location": "TRAF Saint Quent 14",
+        "coordinates": {
+            "lon": 3.2814389995581292,
+            "lat": 49.8428200002493
+        },
+        "measurements_parameter": "PM2.5",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 8.6,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "PEILLON",
+        "location": "PEILLON",
+        "coordinates": {
+            "lon": 7.373282999688281,
+            "lat": 43.786582999679794
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 12.9,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "GAP",
+        "location": "GAP JEAN JAURES",
+        "coordinates": {
+            "lon": 6.067237000340383,
+            "lat": 44.54864999982685
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 28.1,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ALBERTVILLE",
+        "location": "Albertville",
+        "coordinates": {
+            "lon": 6.389722000443968,
+            "lat": 45.67500000012494
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 25.2,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "SENS",
+        "location": "Sens",
+        "coordinates": {
+            "lon": 3.2773000002084496,
+            "lat": 48.20043599997381
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 13.4,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "OUTREAU",
+        "location": "Outreau",
+        "coordinates": {
+            "lon": 1.5765700000004375,
+            "lat": 50.69434999996249
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 12.1,
+        "measurements_lastupdated": "2024-10-14T23:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "CH\u00c2TEAUROUX",
+        "location": "Chateauroux Sud",
+        "coordinates": {
+            "lon": 1.6931389998002828,
+            "lat": 46.798280000207406
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 15.5,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "VILLAGE-NEUF",
+        "location": "C.C.3 Fronti\u00e8res",
+        "coordinates": {
+            "lon": 7.568174999691131,
+            "lat": 47.59491299999957
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 26.7,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "AJACCIO",
+        "location": "AJACCIO CONFINA 2",
+        "coordinates": {
+            "lon": 8.796158999850245,
+            "lat": 41.94768499972929
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 11.1,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "B\u00c9THUNE",
+        "location": "Bethune Stade",
+        "coordinates": {
+            "lon": 2.635691999749327,
+            "lat": 50.535384999862295
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 0.7,
+        "measurements_lastupdated": "2024-03-11T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "SOTTEVILLE-L\u00c8S-ROUEN",
+        "location": "Centre Hospitalier",
+        "coordinates": {
+            "lon": 1.0990419999962184,
+            "lat": 49.40050000018459
+        },
+        "measurements_parameter": "PM2.5",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 4.7,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "SAINT-MARTIN-D'H\u00c8RES",
+        "location": "St Martin d'Heres",
+        "coordinates": {
+            "lon": 5.75310000015467,
+            "lat": 45.18280000010896
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 10.0,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "SAINT-JEAN-DE-LA-RUELLE",
+        "location": "St Jean de la Ruelle",
+        "coordinates": {
+            "lon": 1.8734310003922647,
+            "lat": 47.91030000020504
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 15.6,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "REIMS",
+        "location": "DOUMER",
+        "coordinates": {
+            "lon": 4.023063999921394,
+            "lat": 49.25073199990036
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 3.4,
+        "measurements_lastupdated": "2024-10-22T01:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "TOURCOING",
+        "location": "Tourcoing Houpline",
+        "coordinates": {
+            "lon": 3.1736110000365456,
+            "lat": 50.73333400021155
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 15.3,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "FR\u00c9MAINVILLE",
+        "location": "Zone Rurale NO",
+        "coordinates": {
+            "lon": 1.8663809995846123,
+            "lat": 49.063087000119914
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 2.2,
+        "measurements_lastupdated": "2024-10-22T01:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "AMB\u00c8S",
+        "location": "AMBES",
+        "coordinates": {
+            "lon": -0.5339420004209319,
+            "lat": 45.0147800000761
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 41.2,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "VERQUIGNEUL",
+        "location": "Noeux-les-Mines",
+        "coordinates": {
+            "lon": 2.666419999631686,
+            "lat": 50.48971999990634
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 12.5,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "AUBERVILLIERS",
+        "location": "AUBERVILLIERS",
+        "coordinates": {
+            "lon": 2.384700000047436,
+            "lat": 48.903899999756625
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 38.8,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "MANOSQUE",
+        "location": "MANOSQUE",
+        "coordinates": {
+            "lon": 5.786131000151143,
+            "lat": 43.835784999886975
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 6.3,
+        "measurements_lastupdated": "2024-03-11T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "SALOU\u00cbL",
+        "location": "Salouel",
+        "coordinates": {
+            "lon": 2.239806000038458,
+            "lat": 49.86889000007355
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 0.3,
+        "measurements_lastupdated": "2024-10-23T04:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "STRASBOURG",
+        "location": "Strasbourg Nord",
+        "coordinates": {
+            "lon": 7.781631000348977,
+            "lat": 48.61036300009321
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 8.6,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "LES MAZURES",
+        "location": "REVIN",
+        "coordinates": {
+            "lon": 4.630000000243833,
+            "lat": 49.90777999998879
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 4.1,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "VANNES",
+        "location": "Vannes UTA",
+        "coordinates": {
+            "lon": -2.7639900003799855,
+            "lat": 47.64892000006578
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 13.4,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "MONTB\u00c9LIARD",
+        "location": "Montb\u00e9liard centre",
+        "coordinates": {
+            "lon": 6.793999999555329,
+            "lat": 47.510306999864795
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 36.7,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "VOIRON",
+        "location": "Voiron Urbain",
+        "coordinates": {
+            "lon": 5.589418999907938,
+            "lat": 45.360176000039665
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 7.7,
+        "measurements_lastupdated": "2024-03-11T09:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "BREST",
+        "location": "Brest Mace",
+        "coordinates": {
+            "lon": -4.486600000061974,
+            "lat": 48.38617999988861
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 15.6,
+        "measurements_lastupdated": "2024-10-23T07:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "NANTES",
+        "location": "FRERES GONCOURT",
+        "coordinates": {
+            "lon": -1.564810999930711,
+            "lat": 47.204119999935116
+        },
+        "measurements_parameter": "PM2.5",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 8.4,
+        "measurements_lastupdated": "2024-10-23T04:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "SAINT-\u00c9TIENNE-DE-MONTLUC",
+        "location": "S ETIENNE DE MONTLUC",
+        "coordinates": {
+            "lon": -1.7831640001716063,
+            "lat": 47.28318000004529
+        },
+        "measurements_parameter": "NO",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 0.5,
+        "measurements_lastupdated": "2024-03-11T06:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "LA ROCHE-SUR-YON",
+        "location": "DELACROIX",
+        "coordinates": {
+            "lon": -1.436831000215685,
+            "lat": 46.66070000023191
+        },
+        "measurements_parameter": "NO2",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 5.1,
+        "measurements_lastupdated": "2024-10-23T02:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "MARCQ-EN-BAR\u0152UL",
+        "location": "Marcq CTM",
+        "coordinates": {
+            "lon": 3.076560000045331,
+            "lat": 50.6700299997373
+        },
+        "measurements_parameter": "O3",
+        "measurements_sourcename": "eea",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 141.1,
+        "measurements_lastupdated": "2023-04-03T12:00:00+00:00",
+        "country_name_en": "France"
+    },
+    {
+        "country": "FR",
+        "city": "ATMO NOUVELLE-AQUITAINE",
+        "location": "NET-FR058A",
+        "coordinates": {
+            "lon": 1.87,
+            "lat": 46.17
+        },
+        "measurements_parameter": "PM10",
+        "measurements_sourcename": "EEA France",
+        "measurements_unit": "\u00b5g/m\u00b3",
+        "measurements_value": 6.6,
+        "measurements_lastupdated": "2024-03-04T06:00:00+00:00",
+        "country_name_en": "France"
+    }
+]
