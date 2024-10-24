@@ -1,8 +1,6 @@
 import requests
 import json
 
-# Endpoint de l'API pour les mesures de la qualité de l'air en France
-base_url = "https://data.smartidf.services/api/explore/v2.1/catalog/datasets/qualite-de-lair-france/records"
 params = {
     'country': 'FR',  # Code du pays pour la France
     'limit': 100,     # Limite du nombre de résultats par page
