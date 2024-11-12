@@ -8,12 +8,12 @@ import datetime
 load_dotenv()
 
 # Récupérer les clés API et URL depuis le fichier .env
-mongodb_uri = os.getenv("MONGODB_URL")
+mongodb_url = os.getenv("MONGODB_URL")
 meteo_api_url = os.getenv("API_URL_METEO")
 meteo_api_key = os.getenv("METEO_API_KEY")
 
 # Configurer MongoDB
-client = MongoClient(mongodb_uri)
+client = MongoClient(mongodb_url)
 db = client['API_Project']  # Nom de la base de données
 collection = db['Meteo']  # Nom de la collection
 
