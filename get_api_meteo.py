@@ -47,11 +47,9 @@ def replace_dates(url, old_date, new_date):
     return new_url
 
 
-
 # Faire la requête GET
 response = requests.get(meteo_api_url, headers=headers)
 # Envoyer la requête pour obtenir les données
-#response = requests.get(meteo_api_url)
 
 if response.status_code == 200:
     # Les données sont au format CSV, nous allons les traiter
