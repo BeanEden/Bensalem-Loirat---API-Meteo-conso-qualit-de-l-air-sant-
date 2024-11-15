@@ -1,0 +1,14 @@
+# Utiliser une image de base officielle d'Airflow
+FROM apache/airflow:2.0.0
+
+# Copier le fichier entrypoint.sh depuis ton répertoire local vers l'image Docker
+COPY entrypoint.sh /entrypoint.sh
+
+# Donner des permissions d'exécution au fichier entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Définir entrypoint.sh comme script d'entrée pour démarrer le conteneur
+ENTRYPOINT ["/entrypoint.sh"]
+
+# Commande pour démarrer Airflow (par défaut)
+CMD ["webserver"]
