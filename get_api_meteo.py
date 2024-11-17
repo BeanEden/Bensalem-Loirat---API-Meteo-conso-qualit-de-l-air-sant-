@@ -3,6 +3,8 @@ import requests
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import datetime
+from transfo import rationalisation_df
+import pandas as pd
 
 # Charger les variables d'environnement depuis le fichier .env
 load_dotenv()
@@ -39,31 +41,31 @@ dict_corresp_station = {
                          'STATIC0218': 'Vergéal',
                          'STATIC0308':'Quimper'}
                                              
-a = "https://www.infoclimat.fr/opendata/?version=2&method=get&format=csv&stations[]=07110&stations[]=STATIC0308&stations[]=STATIC0021&stations[]=000GZ&stations[]=07130&stations[]=000M7&start=2024-11-09&end=2024-11-11&token=OYCR3cgNDJiAMwRKHFaWrIxVR9aSqhVhFy6pQt4eH6Cv7b1k678zQ"
 v = datetime.datetime.now()
 new_date = str(v.date())
 
+
 def change_url(url_arg, new_start_date_arg, new_end_date_arg):
-    start = "start="
-    end = "end="
+    # On recupère la base
+    base= url_arg.find("start=")
+    exemple_date = "start=2024-11-09&end=2024-11-11"
+    len_date_arg = len(exemple_date)
+    total = base+ len_date_arg
+    old_arg_date = url_arg[base:total]
+    new_date_arg = f"start={new_start_date_arg}&end={new_end_date_arg}"
     # On repère et remplace la start_date
-    start_date= url_arg.find(start)
-    prev_start_date = url_arg[start_date:(len(new_start_date_arg)-1)]
-    url_arg = url_arg.replace(prev_start_date, new_start_date_arg)
-    
-    # On repère et remplace la end_date
-    end_date= url_arg.find(end)
-    prev_end_date = url_arg[end_date:(len(new_end_date_arg)+end_date+len(start))]
-    url_arg = url_arg.replace(prev_end_date, new_end_date_arg)
-    return url_arg
+    new_url = url_arg.replace(old_arg_date, new_date_arg)
+    return eval(new_url)
 
 
-d1 = datetime.date(2024, 11, 17)
+d1 = datetime.date(2023, 1, 1)
 d2 = datetime.date(2024, 11, 17)
 days = [d1 + datetime.timedelta(days=x) for x in range((d2-d1).days + 1)]
 
+
 for day in days:
     date_to_get= day.strftime('%Y-%m-%d')
+    print(date_to_get)
     day_url = change_url(meteo_api_url, date_to_get, date_to_get)
     # Faire la requête GET
     response = requests.get(day_url, headers=headers)
@@ -75,7 +77,7 @@ for day in days:
         rows = content.splitlines()
         # On regarde le nombre de lignes de métadonnées (#)
         index_rec = 0
-        for i in range(50) :
+        for i in range(20) :
             if rows[i][0]=="#":
                 index_rec = i+1
         # On retire les métadonnées du jeu
@@ -84,13 +86,20 @@ for day in days:
         rows.pop(1)
 
         # On défini les en-têtes de colonnes
-        headers = rows[0].split(';')
-
+        columns = rows[0].split(';')
+        
+        list_df = []
         # Insérer les données dans MongoDB
         for row in rows:  # Ignorer l'en-tête
             values = row.split(';')
-            document = {headers[i]: values[i] for i in range(len(headers))}
-            collection.insert_one(document)  # Insérer chaque ligne comme un document séparé
+            list_df.append(values)
+            #document = {columns[i]: values[i] for i in range(len(columns))}
+                        #collection.insert_one(document)  # Insérer chaque ligne comme un document séparé
+        df = pd.DataFrame(list_df[1:], columns=columns)
+
+        df_rat=rationalisation_df(df)
+        data_dict = df_rat.to_dict(orient='records')
+        collection.insert_many(data_dict)
         print("Données insérées avec succès dans la collection 'Meteo'")
     else:
         print(f"Erreur lors de l'appel API: {response.status_code} - {response.text}")

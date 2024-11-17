@@ -10,8 +10,8 @@ def hello_world():
 
 # Define the DAG
 dag = DAG(
-    'simple_hello_world_dag',                 # DAG ID
-    description='A simple hello world DAG',   # Description
+    'Meteo_API_dag',                 # DAG ID
+    description='get data from the Infoclimat API and load it in MongoDB',   # Description
     schedule_interval='@daily',               # Schedule interval (runs once per day)
     start_date=datetime(2024, 1, 1),           # Start date (start running from this date)
     catchup=False                              # Whether to backfill missing DAG runs
