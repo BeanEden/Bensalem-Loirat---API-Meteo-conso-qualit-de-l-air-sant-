@@ -108,3 +108,6 @@ for day in days:
 client.close()
 
 
+
+#if __name__ == "__main__":
+    #my_function()

@@ -4,9 +4,16 @@ from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
 
-# Define the function that will be executed by the PythonOperator
-def hello_world():
-    print("Hello, world!")
+import subprocess
+
+# Define a function to run the Python script
+def run_my_script():
+    # Path to your Python file
+    script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\"Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-"\get_api_meteo.py'
+    
+    # Using subprocess to run the Python script
+    subprocess.run(['python', script_path], check=True)
+
 
 # Define the DAG
 dag = DAG(
@@ -17,22 +24,11 @@ dag = DAG(
     catchup=False                              # Whether to backfill missing DAG runs
 )
 
-# Define the tasks
-start_task = DummyOperator(
-    task_id='start',                          # Task ID
-    dag=dag
-)
-
 hello_task = PythonOperator(
     task_id='hello_task',
-    python_callable=hello_world,             # Function to run
-    dag=dag
-)
-
-end_task = DummyOperator(
-    task_id='end',
+    python_callable=run_my_script,             # Function to run
     dag=dag
 )
 
 # Set the task dependencies (order of execution)
-start_task >> hello_task >> end_task
+hello_task

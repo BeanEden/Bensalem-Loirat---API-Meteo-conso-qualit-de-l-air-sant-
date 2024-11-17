@@ -6,7 +6,7 @@ from elasticsearch.helpers import bulk
 es = Elasticsearch("http://localhost:9200")
  
  
-csv_file_path = "../data/kafka_messages.csv"
+csv_file_path = "../end_data/end_file.csv"
  
 # Charger les données CSV
 data = pd.read_csv(csv_file_path)
