@@ -20,16 +20,20 @@ if es.indices.exists(index=index_name):
  
 # Créer un nouvel index
 es.indices.create(index=index_name)
+
+
  
 # Préparer les données pour Elasticsearch
 def generate_data(df):
     for _, row in df.iterrows():
         yield {
+            "_op_type": "index",
             "_index": index_name,
             "_source": row.to_dict(),
         }
  
-# Insérer les données dans Elasticsearch
-bulk(es, generate_data(data))
- 
+actions = generate_data(data, index_name)
+# Perform the bulk insert
+success, failed = bulk(es, actions)
+print(f"Successfully indexed {success} documents. Failed: {failed}")
 print("Importation terminée avec succès.")

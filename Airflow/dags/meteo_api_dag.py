@@ -9,6 +9,7 @@ import subprocess
 def run_meteo_api():
     # Path to your Python file
     script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\"Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-"\get_api_meteo.py'
+    
     # Using subprocess to run the Python script
     try:
         subprocess.run(['python', script_path], check=True)

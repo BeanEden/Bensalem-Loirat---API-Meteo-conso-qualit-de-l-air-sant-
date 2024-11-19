@@ -6,9 +6,9 @@ from datetime import datetime, timedelta
 import subprocess
 
 # Define a function to run the Python script
-def run_meteo_api():
+def run_conso_api():
     # Path to your Python file
-    script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\"Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-"\get_api_meteo.py'
+    script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_collection\getAPIConso.py'
     # Using subprocess to run the Python script
     try:
         subprocess.run(['python', script_path], check=True)
@@ -20,14 +20,14 @@ def run_meteo_api():
 dag = DAG(
     'Conso_API_dag',                 # DAG ID
     description='get data from the Infoclimat API and load it in MongoDB',   # Description
-    schedule_interval='0 */1 * * *',               # Schedule interval (runs once per hour)
+    schedule_interval='0 */1 * * *',               # Schedule interval (runs once per hour) '@daily'
     start_date=datetime(2024, 1, 1),           # Start date (start running from this date)
     catchup=False                              # Whether to backfill missing DAG runs
 )
 
-run_meteo_api_task = PythonOperator(
-    task_id='run_meteo_api',
-    python_callable=run_meteo_api,             # Function to run
+run_conso_api_task = PythonOperator(
+    task_id='run_conso_api',
+    python_callable=run_conso_api,             # Function to run
     dag=dag
 )
 

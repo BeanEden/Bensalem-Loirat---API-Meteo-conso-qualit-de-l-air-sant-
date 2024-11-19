@@ -3,8 +3,21 @@ import requests
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import datetime
-from transfo import rationalisation_df
+from data_collection.transfo_meteo import rationalisation_df
 import pandas as pd
+
+def change_url(url_arg, new_start_date_arg, new_end_date_arg):
+        # On recupère la base
+        base= url_arg.find("start=")
+        exemple_date = "start=2024-11-09&end=2024-11-11"
+        len_date_arg = len(exemple_date)
+        total = base+ len_date_arg
+        old_arg_date = url_arg[base:total]
+        new_date_arg = f"start={new_start_date_arg}&end={new_end_date_arg}"
+        # On repère et remplace la start_date
+        new_url = url_arg.replace(old_arg_date, new_date_arg)
+        return eval(new_url)
+
 
 def mainstream():
     # Charger les variables d'environnement depuis le fichier .env
@@ -48,21 +61,11 @@ def mainstream():
     new_date = str(v.date())
 
 
-    def change_url(url_arg, new_start_date_arg, new_end_date_arg):
-        # On recupère la base
-        base= url_arg.find("start=")
-        exemple_date = "start=2024-11-09&end=2024-11-11"
-        len_date_arg = len(exemple_date)
-        total = base+ len_date_arg
-        old_arg_date = url_arg[base:total]
-        new_date_arg = f"start={new_start_date_arg}&end={new_end_date_arg}"
-        # On repère et remplace la start_date
-        new_url = url_arg.replace(old_arg_date, new_date_arg)
-        return eval(new_url)
+    
 
 
-    d1 = datetime.date(2024, 11, 17)
-    d2 = datetime.date(2024, 11, 17)
+    d1 = datetime.date.today()
+    d2 = datetime.date.today()
     days = [d1 + datetime.timedelta(days=x) for x in range((d2-d1).days + 1)]
     print(days)
 
