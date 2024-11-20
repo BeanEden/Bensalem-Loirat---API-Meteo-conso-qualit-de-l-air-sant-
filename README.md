@@ -60,26 +60,40 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 
 ```
 .
-├── data
-│   ├── energy_data.csv
-│   ├── weather_data.csv
-├── notebooks
-│   ├── ETL.ipynb
+├── data_collection
+│   └── getAPIConso.py
+│   └── getAPIMeteo.py
+├── data_transformation
+│   └── conso_ETL.py
+│   └── merge_API.py
+├── end_data
+│   ├── end_data.csv
 ├── Airflow
 │   ├── docker-compose.yml
 │   ├── dags
 │   ├── script
 ├── ELK
+│   └── elastic_search.py
 │   └── docker-compose.yml
+├── SQL
+│   └── load_date_sql.py
+│   └── load_fact_sql.py
+├── tests
+│   └── tests_api.py
+│   
 ├── requirements.txt
 └── README.md
 ```
+![alt text](<Capture d'écran 2024-11-20 123103.png>)
 
 ### 🔧 **Déroulement Technique**
 
 1. **Collecte et Préparation des Données** 🌐  
    - Extraction des données énergétiques et météo depuis une API publique et envoi des données vers MongoDB.  
    - Nettoyage, agrégation, et transformation des données via Python.
+   - Usage de Airflow en orchestrateur
+
+![alt text](<Capture d'écran 2024-11-20 121110-1.png>)
 
 2. **Analyse Exploratoire** 🔍  
    - Corrélation entre les variables.
@@ -89,7 +103,7 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 
 4. **Visualisation et Analyse** 📊  
    - **ElasticSearch** est utilisé pour créer des tableaux de bord interactifs.
-
+![alt text](<Capture d'écran 2024-11-20 123345.png>)
 ## 🌟 **Fonctionnalités du Projet**
 
 - **Analyse des Corrélations** 🔗 : Identification des relations entre variables météo et consommation.
@@ -120,10 +134,10 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
    Créez un fichier `.env` et renseignez les paramètres suivants :  
    ```env
     API_KEY= "***************"
-    API_URL = "https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/eco2mix-regional-tr/exports/"
     MONGODB_URL = "mongodb+srv:/*********************/"
     API_KEY_Meteo = "********************"
-    API_URL_METEO = "https://www.infoclimat.fr/opendata/"
+    API_URL_METEO = "https://www.infoclimat.fr/opendata/*************"
+    API_URL = "https://odre.opendatasoft.com/*************"
    ```
 
 5. **Exécuter les Scripts Principaux** 🚀  
@@ -145,6 +159,7 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 ## 🚀 **Déploiement**
 
 - **Docker** 🐳 : Conteneurisation des services (Kafka, Elasticsearch) pour simplifier le déploiement.
+
 - **Configurations** ⚙️ : Variables d’API et paramètres de stockage configurables via des fichiers `.env`.
 
 ## 📈 **Visualisation des Données avec ElasticSearch**
@@ -152,6 +167,8 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 _(Captures de la dataviz à insérer ici)_
 
 ## 📝 **Tests et Validation**
+![alt text](<Capture d'écran 2024-11-20 120451.png>)
+![alt text](<Capture d'écran 2024-11-20 121110.png>)
 
 ## 🎯 **Conclusion**
 
