@@ -73,6 +73,8 @@ if not os.path.exists(folder_path):
 # Chemin complet du fichier CSV
 file_path = os.path.join(folder_path, 'Api_energie_Transforme.csv')
 
+file_path = "C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_transformation\data_transformed\Api_energie_Transforme.csv"
+
 # Exporter le DataFrame vers un fichier CSV
 data.to_csv(file_path, index=False, encoding='utf-8')
 

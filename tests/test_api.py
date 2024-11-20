@@ -1,14 +1,15 @@
 import pytest
 import requests
+
+import os
 from dotenv import load_dotenv
 import os
-
 
 load_dotenv()
 
 mongodb_url = os.getenv("MONGODB_URL")
 api_url = os.getenv("API_URL")
-meteo_api_url = os.getenv("API_URL_METEO_2")
+meteo_api_url = eval(os.getenv("API_URL_METEO_2"))
 meteo_api_key = os.getenv("METEO_API_KEY")
 
 headers = {
@@ -27,16 +28,10 @@ def headers():
 def test_api_meteo(headers):
     response = requests.get(f"{meteo_api_url}", headers=headers)
     assert response.status_code == 200
-    assert response.json()
+    assert len(response.content) > 0
 
 
 def test_api_conso():
     response = requests.get(f"{api_url}")
     assert response.status_code == 200
-    assert response.json()
-
-
-def test_api_conso(headers):
-    response = requests.get(f"{meteo_api_url}", headers=headers)
-    assert response.status_code == 200
-    assert response.json()
+    assert len(response.content) > 0

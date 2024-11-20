@@ -3,7 +3,7 @@ import requests
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import datetime
-from data_collection.transfo_meteo import rationalisation_df
+from transfo_meteo import rationalisation_df
 import pandas as pd
 
 def change_url(url_arg, new_start_date_arg, new_end_date_arg):
@@ -59,9 +59,6 @@ def mainstream():
                                                 
     v = datetime.datetime.now()
     new_date = str(v.date())
-
-
-    
 
 
     d1 = datetime.date.today()

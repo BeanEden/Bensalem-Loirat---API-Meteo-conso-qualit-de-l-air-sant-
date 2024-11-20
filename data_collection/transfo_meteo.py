@@ -196,7 +196,7 @@ def rationalisation_df(df):
         df_h = conjonction_h_to_15(df_h)
         df_h_to_15 = pd.concat([df_h_to_15, df_h], axis=0)
 
-        df_15 = pd.DataFrame()
+    df_15 = pd.DataFrame()
 
     for i in list_station_id_15:
         df_h = df_reduit.loc[df_reduit['station_id'] == i]

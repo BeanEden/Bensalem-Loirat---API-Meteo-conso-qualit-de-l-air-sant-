@@ -32,7 +32,7 @@ if response.status_code == 200:
         values = row.split(';')
         document = {headers[i]: values[i] for i in range(len(headers))}
         collection.insert_one(document)  # Insérer chaque ligne comme un document séparé
-    print("Données insérées avec succès dans la collection 'Meteo'")
+    print("Données insérées avec succès dans la collection 'Conso'")
 else:
     print(f"Erreur lors de l'appel API: {response.status_code} - {response.text}")
 

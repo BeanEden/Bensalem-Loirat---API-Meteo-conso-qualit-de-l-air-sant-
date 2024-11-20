@@ -1,5 +1,5 @@
 import pandas as pd
-from elasticsearch import Elasticsearch
+from elasticsearch import Elasticsearch, helpers
 from elasticsearch.helpers import bulk
  
 # Configurer la connexion à Elasticsearch
@@ -32,8 +32,14 @@ def generate_data(df):
             "_source": row.to_dict(),
         }
  
-actions = generate_data(data, index_name)
+#actions = generate_data(data, index_name)
 # Perform the bulk insert
-success, failed = bulk(es, actions)
-print(f"Successfully indexed {success} documents. Failed: {failed}")
-print("Importation terminée avec succès.")
+#success, failed = bulk(es, actions)
+#print(f"Successfully indexed {success} documents. Failed: {failed}")
+#print("Importation terminée avec succès.")
+
+
+# Index data using the Bulk API
+success, failed = helpers.bulk(es, generate_data(data))
+
+print(f"Bulk indexing completed. Success: {success}, Failed: {failed}")

@@ -10,9 +10,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 current_dir = os.getcwd()
-end_file = '..\end_data.csv'
+end_file = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\end_data\end_data.csv'
 
-conso_path = current_dir +'\data_transformed\Api_energie_Transforme.csv'
+conso_path = "C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_transformation\data_transformed\Api_energie_Transforme.csv"
 
 mongodb_url = os.getenv("MONGODB_URL")
 meteo_api_url = os.getenv("API_URL_METEO_2")
@@ -47,7 +47,7 @@ del df_final[df_final.columns[0]]
 df_final = df_final[df_final['Consommation (MW)'].notna()]
 
 df_final.to_csv(end_file)
-print(end_file)
+print(df_final.head(5))
 
 
 
