@@ -1,7 +1,0 @@
-ENV/
-venv/
-.env
-# Ignorer les fichiers de logs générés par Airflow
-Airflow/airflow/logs/
-
-Airflow/logs/
