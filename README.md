@@ -168,7 +168,7 @@ _(Captures de la dataviz à insérer ici)_
 
 ## 📝 **Tests et Validation**
 ![alt text](<Capture d'écran 2024-11-20 120451.png>)
-![alt text](<Capture d'écran 2024-11-20 121110.png>)
+![alt text](<Capture d'écran 2024-11-20 120420.png>)
 
 ## 🎯 **Conclusion**
 
