@@ -103,7 +103,7 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 
 4. **Visualisation et Analyse** 📊  
    - **ElasticSearch** est utilisé pour créer des tableaux de bord interactifs.
-![alt text](<Capture d'écran 2024-11-20 123345.png>)
+
 ## 🌟 **Fonctionnalités du Projet**
 
 - **Analyse des Corrélations** 🔗 : Identification des relations entre variables météo et consommation.
@@ -164,7 +164,7 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 
 ## 📈 **Visualisation des Données avec ElasticSearch**
 
-_(Captures de la dataviz à insérer ici)_
+![alt text](<Capture d'écran 2024-11-20 123345.png>)
 
 ## 📝 **Tests et Validation**
 ![alt text](<Capture d'écran 2024-11-20 120451.png>)
