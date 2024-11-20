@@ -168,7 +168,6 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 
 ## 📝 **Tests et Validation**
 ![alt text](<Capture d'écran 2024-11-20 120451.png>)
-![alt text](<Capture d'écran 2024-11-20 120420.png>)
 
 ## 🎯 **Conclusion**
 
