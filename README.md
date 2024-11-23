@@ -184,6 +184,7 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 ## 🎯 **Conclusion**
 
 Ce projet offre une approche intégrée pour relier les données météorologiques à la consommation énergétique. 🌍💡🚀
+Une analyse préliminaire est présente dans le fichier "Présentation entrepôt de données pdf".
 
 ## 🤝 **Contributeurs**
 
