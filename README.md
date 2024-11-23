@@ -73,14 +73,14 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 │   ├── dags
 │   ├── script
 ├── ELK
-│   └── elastic_search.py
 │   └── docker-compose.yml
 ├── SQL
 │   └── load_date_sql.py
 │   └── load_fact_sql.py
 ├── tests
 │   └── tests_api.py
-│   
+├── elastic_search.py
+├── main.py
 ├── requirements.txt
 └── README.md
 ```
@@ -114,20 +114,20 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 
 1. **Cloner le Dépôt**  
    ```bash
-   git clone https://github.com/BeanEden/Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-
-   cd Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-
+   'git clone https://github.com/BeanEden/Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-
+   cd Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-'
    ```
 
 2. **Créer un Environnement Virtuel** 🖥️  
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # Unix
-   venv\Scripts\activate     # Windows
+   'python -m venv venv'
+   'source venv/bin/activate'  # Unix
+   'venv\Scripts\activate'     # Windows
    ```
 
 3. **Installer les Dépendances** 📦  
    ```bash
-   pip install -r requirements.txt
+   'pip install -r requirements.txt'
    ```
 
 4. **Configurer les Variables d'Environnement** ⚙️  
@@ -141,14 +141,15 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
    ```
 
 5. **Exécuter les Scripts Principaux** 🚀  
-   - Prétraitement des données :  
+   - Prétraitement des données : 
+   Afin de lancer l'ensemble des processus (de l'API au chargement de l'index elastic_search), lancez la commande suivante :
      ```bash
+     'python main.py'
      # Scripts pour prétraiter les données
      ```
 
    - Alimentation de la datawarehouse :
-   - Test :
-
+   - 'pytest'
 
 
 ## 📊 **Cas d'Usage**

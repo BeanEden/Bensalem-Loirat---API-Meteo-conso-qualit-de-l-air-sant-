@@ -2,14 +2,15 @@
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
-
+import os
 import subprocess
 
 
-conso_script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_collection\getAPIConso.py'
-transfo_script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_transformation\conso_ETL.py'
-meteo_script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\"Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-"\get_api_meteo.py'
-merge_script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_transformation\merge_API.py'
+current_dir = os.get_cwd()
+conso_script_path = current_dir + '\data_collection\getAPIConso.py'
+transfo_script_path = current_dir + '\data_transformation\conso_ETL.py'
+meteo_script_path = current_dir + '\get_api_meteo.py'
+merge_script_path = current_dir + '\data_transformation\merge_API.py'
 
 
 

@@ -2,13 +2,17 @@
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
-
+import os
 import subprocess
+
+
+current_dir = os.get_cwd()
+conso_script_path = current_dir + '\data_collection\getAPIConso.py'
 
 # Define a function to run the Python script
 def run_conso_api():
     # Path to your Python file
-    script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_collection\getAPIConso.py'
+    script_path = conso_script_path
     # Using subprocess to run the Python script
     try:
         subprocess.run(['python', script_path], check=True)

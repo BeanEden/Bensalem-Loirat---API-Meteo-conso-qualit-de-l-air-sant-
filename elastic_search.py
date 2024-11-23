@@ -10,12 +10,10 @@ csv_file_path = "C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet
 
 df = pd.read_csv(csv_file_path, header=0)
 df.rename(columns={df.columns[0]: '_id'}, inplace=True)
-print(df.info())
-print(df.head(5))
 df = df.drop(columns=['Unnamed: 30'])
 df['Date - Heure'] = pd.to_datetime(df['Date - Heure'])
 df['_id'] = df.index
-df.info()
+
 #df[['pluie_intesite','uv', 'uv_index']] = df[['pluie_intesite','uv', 'uv_index']].fillna(0)
 df = df.fillna(0)
 

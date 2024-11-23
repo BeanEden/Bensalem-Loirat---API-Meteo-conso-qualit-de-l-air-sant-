@@ -13,10 +13,6 @@ ELK_dir = current_dir + '\ELK\\'
 airflow_docker_compose_path = current_dir+'\Airflow\docker-compose.yml'
 ELK_docker_compose_path = current_dir+'\ELK\docker-compose.yml'
 
-dag_file = "C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\Airflow\dags\dag_global.py"
-test_file = "C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\tests\test_api.py"
-
-
 
 def start_docker_compose_with_file(compose_file_path):
     # Run docker-compose up with a specific compose file
@@ -68,7 +64,6 @@ def run_process():
     run_python_file('.\data_transformation\merge_API.py')
     run_python_file('.\SQL\load_date_sql.py')
     run_python_file('.\SQL\merge_API.py')
-    run_python_file_terminal('elastic_search.py')
     run_python_file('.\elastic_search.py')
     print("Process done")
 

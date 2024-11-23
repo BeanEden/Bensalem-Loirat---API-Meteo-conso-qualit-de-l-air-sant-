@@ -25,7 +25,7 @@ def mainstream():
 
     # Récupérer les clés API et URL depuis le fichier .env
     mongodb_url = os.getenv("MONGODB_URL")
-    meteo_api_url = os.getenv("API_URL_METEO_2")
+    meteo_api_url = os.getenv("API_URL_METEO")
     meteo_api_key = os.getenv("METEO_API_KEY")
 
     # Configurer MongoDB
@@ -61,10 +61,10 @@ def mainstream():
     new_date = str(v.date())
 
 
-    d1 = datetime.date.today()
+    d1 = datetime.date(year=2023, month=6, day=1)
     d2 = datetime.date.today()
     days = [d1 + datetime.timedelta(days=x) for x in range((d2-d1).days + 1)]
-    print(days)
+    #print(days)
 
 
     for day in days:
@@ -82,30 +82,34 @@ def mainstream():
             # On regarde le nombre de lignes de métadonnées (#)
             index_rec = 0
             
-            for i in range(20) :
-                if rows[i][0]=="#":
-                    index_rec = i+1
+            try :
+                for i in range(20) :
+                    if rows[i][0]=="#":
+                        index_rec = i+1
             # On retire les métadonnées du jeu
-            rows = rows[index_rec:-1]
+                rows = rows[index_rec:-1]
             # On supprime la second ligne de données (détail des colonnes : °C, km/h etc)
-            rows.pop(1)
-
-            # On défini les en-têtes de colonnes
-            columns = rows[0].split(';')
+                rows.pop(1)
+                
+                # On défini les en-têtes de colonnes
+                columns = rows[0].split(';')
             
-            list_df = []
-            # Insérer les données dans MongoDB
-            for row in rows:  # Ignorer l'en-tête
-                values = row.split(';')
-                list_df.append(values)
-                #document = {columns[i]: values[i] for i in range(len(columns))}
-                            #collection.insert_one(document)  # Insérer chaque ligne comme un document séparé
-            df = pd.DataFrame(list_df[1:], columns=columns)
+                list_df = []
+                # Insérer les données dans MongoDB
+                for row in rows:  # Ignorer l'en-tête
+                    values = row.split(';')
+                    list_df.append(values)
+                    #document = {columns[i]: values[i] for i in range(len(columns))}
+                                #collection.insert_one(document)  # Insérer chaque ligne comme un document séparé
+                df = pd.DataFrame(list_df[1:], columns=columns)
 
-            df_rat=rationalisation_df(df)
-            data_dict = df_rat.to_dict(orient='records')
-            collection.insert_many(data_dict)
-            print("Données insérées avec succès dans la collection 'Meteo'")
+                df_rat=rationalisation_df(df)
+                data_dict = df_rat.to_dict(orient='records')
+                collection.insert_many(data_dict)
+                print("Données insérées avec succès dans la collection 'Meteo'")
+            except IndexError:
+                print("no data")
+                pass
         else:
             print(f"Erreur lors de l'appel API: {response.status_code} - {response.text}")
 
