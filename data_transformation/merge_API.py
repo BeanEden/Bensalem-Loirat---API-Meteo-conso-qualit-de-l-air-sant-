@@ -6,7 +6,6 @@ import datetime
 from dotenv import load_dotenv
 
 
-
 load_dotenv()
 
 current_dir = os.getcwd()
@@ -43,11 +42,11 @@ df_final =df_final.drop(columns=['Nature',
                                 'variation'])
 
 del df_final[df_final.columns[0]]
-
+df_final['id'] = df_final.index
 df_final = df_final[df_final['Consommation (MW)'].notna()]
-
-df_final.to_csv(end_file)
 print(df_final.head(5))
+df_final.to_csv(end_file, index=False)
+
 
 
 

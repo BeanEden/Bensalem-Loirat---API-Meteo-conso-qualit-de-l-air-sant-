@@ -84,7 +84,7 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
 ├── requirements.txt
 └── README.md
 ```
-![alt text](<Capture d'écran 2024-11-20 123103.png>)
+![alt text](<Présentation de données.png>)
 
 ### 🔧 **Déroulement Technique**
 

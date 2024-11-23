@@ -5,51 +5,23 @@ from datetime import datetime, timedelta
 
 import subprocess
 
-# Define a function to run the Python script
-def run_conso_api():
-    # Path to your Python file
-    script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_collection\getAPIConso.py'
-    # Using subprocess to run the Python script
-    try:
-        subprocess.run(['python', script_path], check=True)
-    except subprocess.CalledProcessError as e:
-        print(f"Erreur lors de l'exécution du script : {e}")
 
-
-# Define a function to run the Python script
-def run_meteo_api():
-    # Path to your Python file
-    script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\"Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-"\get_api_meteo.py'
-    
-    # Using subprocess to run the Python script
-    try:
-        subprocess.run(['python', script_path], check=True)
-    except subprocess.CalledProcessError as e:
-        print(f"Erreur lors de l'exécution du script : {e}")
-
+conso_script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_collection\getAPIConso.py'
+transfo_script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_transformation\conso_ETL.py'
+meteo_script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\"Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-"\get_api_meteo.py'
+merge_script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_transformation\merge_API.py'
 
 
 
 # Define a function to run the Python script
-def run_transfo_conso_api():
+def run_python_script(python_script_path):
     # Path to your Python file
-    script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_transformation\conso_ETL.py'
-    
+    file = python_script_path.split("\\")
+    command = ['python', python_script_path]
     # Using subprocess to run the Python script
     try:
-        subprocess.run(['python', script_path], check=True)
-    except subprocess.CalledProcessError as e:
-        print(f"Erreur lors de l'exécution du script : {e}")
-
-
-# Define a function to run the Python script
-def run_merge_api():
-    # Path to your Python file
-    script_path = 'C:\\Users\JC\Documents\Sup de vinci\Entrepots de donnees\Projet API\Bensalem-Loirat---API-Meteo-conso-qualit-de-l-air-sant-\data_transformation\merge_API.py'
-    
-    # Using subprocess to run the Python script
-    try:
-        subprocess.run(['python', script_path], check=True)
+        subprocess.run(command, check=True)
+        print(file[-1])
     except subprocess.CalledProcessError as e:
         print(f"Erreur lors de l'exécution du script : {e}")
 
@@ -66,27 +38,29 @@ dag = DAG(
 
 run_conso_api_task = PythonOperator(
     task_id='run_conso_api',
-    python_callable=run_conso_api,             # Function to run
+    python_callable=run_python_script(conso_script_path),             # Function to run
     dag=dag
 )
 
 run_meteo_api_task = PythonOperator(
     task_id='run_meteo_api',
-    python_callable=run_meteo_api,             # Function to run
+    python_callable=run_python_script(meteo_script_path),             # Function to run
     dag=dag
 )
 
 run_transfo_conso_api_task = PythonOperator(
     task_id='run_transfo_conso_api',
-    python_callable=run_transfo_conso_api,             # Function to run
+    python_callable=run_python_script(transfo_script_path),             # Function to run
     dag=dag
 )
 
 run_merge_api_task = PythonOperator(
     task_id='run_merge_api',
-    python_callable=run_merge_api,             # Function to run
+    python_callable=run_python_script(merge_script_path),             # Function to run
     dag=dag
 )
 
 # Set the task dependencies (order of execution)
 run_conso_api_task >> run_meteo_api_task >> run_transfo_conso_api_task >> run_merge_api_task
+
+print("da")
