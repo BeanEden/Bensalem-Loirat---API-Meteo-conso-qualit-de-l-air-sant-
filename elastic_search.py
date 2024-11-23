@@ -34,9 +34,6 @@ es.indices.create(index=index_name)
 def generate_actions(df, index_name):
     for i, row in df.iterrows():
         row_data = row.drop('_id').to_dict()
-        if i < 3:
-            for key, values in row_data.items():
-                print(key, values, type(values))
         yield {
             "_op_type": "index",  # Index operation
             "_index": index_name,  # Index name
