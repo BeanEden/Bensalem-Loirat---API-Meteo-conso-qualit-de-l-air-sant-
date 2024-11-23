@@ -141,6 +141,12 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
    ```
 
 5. **Exécuter les Scripts Principaux** 🚀  
+   - Test de la connection aux APIs:
+   Afin de tester la bonne connection aux APIs suite à la création du fichier .env, vous pouvez lancer la commande :
+   ```bash
+   'pytest'
+   ```
+
    - Prétraitement des données : 
    Afin de lancer l'ensemble des processus (de l'API au chargement de l'index elastic_search), lancez la commande suivante :
      ```bash
@@ -148,8 +154,13 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
      # Scripts pour prétraiter les données
      ```
 
-   - Alimentation de la datawarehouse :
-   - 'pytest'
+      - Alimentation de la datawarehouse :
+   Sans connexion à une base SQL existante, les scripts SQL n'intègreront aucune donnée mais n'empêcheront pas le process de tourner ou les données d'être chargées dans Kibana.
+
+
+   - Dashboard :
+   A la suite du chargement de l'index des données dans elastic search, vous pouvez charger l'index en tant que "index_pattern" sur kibana et créer le dashboard de votre choix.
+   En effet, Kibana ne permet pas d'échanger les dashboard en localhost.
 
 
 ## 📊 **Cas d'Usage**
