@@ -5,8 +5,11 @@ from datetime import datetime, timedelta
 import os
 import subprocess
 
+
+
 current_dir = os.get_cwd()
-meteo_script_path = current_dir + '\get_api_meteo.py'
+meteo_script_path = current_dir - '\Airflow\dags' + '\data_collection\getAPIMeteo.py'
+print(meteo_script_path)
 
 
 # Define a function to run the Python script

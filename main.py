@@ -4,6 +4,8 @@ import subprocess
 import runpy
 import sys
 
+import traceback
+
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
@@ -50,8 +52,10 @@ def run_python_file(path):
     print(f'Running {path} ...')
     try : 
        runpy.run_path(path) 
+
     except:
         print(f"Error: Script '{path}' didn't run. Try running it with the terminal or check on librairies")
+        traceback.print_exc()
 
 
 def run_process():

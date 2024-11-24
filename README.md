@@ -146,7 +146,7 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
    ```bash
    'pytest'
    ```
-
+   - Lancez le docker engine
    - Prétraitement des données : 
    Afin de lancer l'ensemble des processus (de l'API au chargement de l'index elastic_search), lancez la commande suivante :
      ```bash

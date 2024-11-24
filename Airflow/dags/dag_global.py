@@ -6,10 +6,10 @@ import os
 import subprocess
 
 
-current_dir = os.get_cwd()
+current_dir = os.get_cwd() - '\Airflow\dags'
 conso_script_path = current_dir + '\data_collection\getAPIConso.py'
+meteo_script_path = current_dir + '\data_collection\getAPIMeteo.py'
 transfo_script_path = current_dir + '\data_transformation\conso_ETL.py'
-meteo_script_path = current_dir + '\get_api_meteo.py'
 merge_script_path = current_dir + '\data_transformation\merge_API.py'
 
 

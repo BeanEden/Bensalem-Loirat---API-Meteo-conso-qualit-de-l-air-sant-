@@ -7,7 +7,8 @@ import subprocess
 
 
 current_dir = os.get_cwd()
-conso_script_path = current_dir + '\data_collection\getAPIConso.py'
+conso_script_path = current_dir - '\Airflow\dags' + '\data_collection\getAPIConso.py'
+print(conso_script_path)
 
 # Define a function to run the Python script
 def run_conso_api():
