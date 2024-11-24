@@ -1,31 +1,76 @@
 # Import necessary libraries
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
-from datetime import datetime, timedelta
+from datetime import datetime
 import os
 import subprocess
 
 
-current_dir = os.get_cwd() - '\Airflow\dags'
+current_dir = os.getcwd()
+current_dir = current_dir.replace('\Airflow\dags',"")
 conso_script_path = current_dir + '\data_collection\getAPIConso.py'
 meteo_script_path = current_dir + '\data_collection\getAPIMeteo.py'
 transfo_script_path = current_dir + '\data_transformation\conso_ETL.py'
 merge_script_path = current_dir + '\data_transformation\merge_API.py'
 
 
+conso_script_path = current_dir.replace('\Airflow\dags','\data_collection\getAPIConso.py')
+
 
 # Define a function to run the Python script
-def run_python_script(python_script_path):
+def run_conso_api():
     # Path to your Python file
-    file = python_script_path.split("\\")
-    command = ['python', python_script_path]
+    script_path = conso_script_path
     # Using subprocess to run the Python script
     try:
-        subprocess.run(command, check=True)
-        print(file[-1])
+        subprocess.run(['python', script_path], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Erreur lors de l'exécution du script : {e}")
 
+
+meteo_script_path = current_dir.replace('\Airflow\dags','\data_collection\getAPIMeteo.py')
+
+
+
+# Define a function to run the Python script
+def run_meteo_api():
+    # Path to your Python file
+    script_path = meteo_script_path
+    
+    # Using subprocess to run the Python script
+    try:
+        subprocess.run(['python', script_path], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Erreur lors de l'exécution du script : {e}")
+
+
+transfo_script_path = current_dir.replace('\Airflow\dags','\data_transformation\conso_ETL.py')
+
+# Define a function to run the Python script
+def run_conso_ETL():
+    # Path to your Python file
+    script_path = transfo_script_path
+    
+    # Using subprocess to run the Python script
+    try:
+        subprocess.run(['python', script_path], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Erreur lors de l'exécution du script : {e}")
+
+
+merge_script_path = current_dir.replace('\Airflow\dags','\data_transformation\merge_API.py')
+
+
+# Define a function to run the Python script
+def run_merge_API():
+    # Path to your Python file
+    script_path = merge_script_path
+    
+    # Using subprocess to run the Python script
+    try:
+        subprocess.run(['python', script_path], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Erreur lors de l'exécution du script : {e}")
 
 
 # Define the DAG
@@ -39,29 +84,27 @@ dag = DAG(
 
 run_conso_api_task = PythonOperator(
     task_id='run_conso_api',
-    python_callable=run_python_script(conso_script_path),             # Function to run
+    python_callable=run_conso_api,             # Function to run
     dag=dag
 )
 
 run_meteo_api_task = PythonOperator(
     task_id='run_meteo_api',
-    python_callable=run_python_script(meteo_script_path),             # Function to run
+    python_callable=run_meteo_api,             # Function to run
     dag=dag
 )
 
 run_transfo_conso_api_task = PythonOperator(
     task_id='run_transfo_conso_api',
-    python_callable=run_python_script(transfo_script_path),             # Function to run
+    python_callable=run_conso_ETL,             # Function to run
     dag=dag
 )
 
 run_merge_api_task = PythonOperator(
     task_id='run_merge_api',
-    python_callable=run_python_script(merge_script_path),             # Function to run
+    python_callable=run_merge_API,             # Function to run
     dag=dag
 )
 
 # Set the task dependencies (order of execution)
 run_conso_api_task >> run_meteo_api_task >> run_transfo_conso_api_task >> run_merge_api_task
-
-print("da")

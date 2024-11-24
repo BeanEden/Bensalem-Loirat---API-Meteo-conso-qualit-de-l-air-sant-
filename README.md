@@ -94,7 +94,7 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
    - Usage de Airflow en orchestrateur
 
 ![alt text](<Capture d'écran 2024-11-20 121110-1.png>)
-
+Les données sont automatiquement requêtées toutes les heures lorsque Airflow est actif.
 2. **Analyse Exploratoire** 🔍  
    - Corrélation entre les variables.
 
@@ -173,6 +173,7 @@ Autrement, vous pouvez définir la date à partir de laquelle vous souhaitez req
 
    - Dashboard :
    A la suite du chargement de l'index des données dans elastic search, vous pouvez charger l'index en tant que "index_pattern" sur kibana et créer le dashboard de votre choix.
+
    En effet, Kibana ne permet pas d'échanger les dashboard en localhost.
 
 

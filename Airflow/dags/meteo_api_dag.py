@@ -7,8 +7,8 @@ import subprocess
 
 
 
-current_dir = os.get_cwd()
-meteo_script_path = current_dir - '\Airflow\dags' + '\data_collection\getAPIMeteo.py'
+current_dir = os.getcwd()
+meteo_script_path = current_dir.replace('\Airflow\dags','\data_collection\getAPIMeteo.py')
 print(meteo_script_path)
 
 
