@@ -145,9 +145,11 @@ Pour Mongo DB, il est important d'avoir une collection avec cette architecture :
 Concernant l'API Infoclimat, il est nécessaire de se créer un compte puis de générer une clé liée à son IP.
 En cas de changement d'IP, une nouvelle clé doit être générée.
 ![alt text](<clés infoclimat.png>)
+
 Pour information, l'API est reglée de base pour récupérer les données depuis le 1er novembre 2024.
-Le réglge se fait dans la
+
 Si vous souhaitez générer les données au jour le jour, il vous suffit d'aller dans le fichier "getAPIMeteo" et, ligne 270, régler d1 en tant que datetemite.date.today().
+
 Autrement, vous pouvez définir la date à partir de laquelle vous souhaitez requêter
 ![alt text](image-1.png)
 
