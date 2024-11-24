@@ -139,6 +139,12 @@ Les analyses portent sur des données spécifiques à la région de **Bretagne**
     API_URL_METEO = "https://www.infoclimat.fr/opendata/*************"
     API_URL = "https://odre.opendatasoft.com/*************"
    ```
+Pour Mongo DB, il est important d'avoir une collection avec cette architecture : 
+![alt text](image.png)
+
+Concernant l'APi infoclimat, il est nécessaire de se créer un compte puis de générer une clé liée à son IP.
+En cas de changement d'IP, une nouvelle clé doit être générée.
+![alt text](<clés infoclimat.png>)
 
 5. **Exécuter les Scripts Principaux** 🚀  
    - Test de la connection aux APIs:
