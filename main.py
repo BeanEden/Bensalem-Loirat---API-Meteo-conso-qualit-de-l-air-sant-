@@ -67,7 +67,7 @@ def run_process():
     run_python_file('.\data_transformation\conso_ETL.py')
     run_python_file('.\data_transformation\merge_API.py')
     run_python_file('.\SQL\load_date_sql.py')
-    run_python_file('.\SQL\merge_API.py')
+    run_python_file('.\SQL\load_fact_sql.py')
     run_python_file('.\elastic_search.py')
     print("Process done")
 
